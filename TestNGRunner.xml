@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name=""SonalTraining" verbose="1" >
+  
+  <test name="TestCycle1" >
+    <classes>
+       <class name="NoPackageTest" />
+    </classes>
+  </test>
+ 
+  <test name="Regression1">
+    <classes>
+      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterTest"/>
+    </classes>
+  </test>
+</suite>
