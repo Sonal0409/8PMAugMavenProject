@@ -4,6 +4,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -24,9 +25,14 @@ public class AnnotationsTestNG {
 	// after all the test method, before methods, aftermethods are executed in the class. 
 	//And this method will be executed only once.
 	
+	@BeforeSuite
+	public void suiteTest()
+	{
+		System.out.println("This method will be executed beofre the suite begins");
+	}
 	
-	
-	
+	@BeforeTest  
+	//: this method will get executed before every tests in your xml file
 	public void exampletest()
 	{
 		System.out.println("This method will be executed beofre the test begins");
@@ -64,6 +70,7 @@ public class AnnotationsTestNG {
 	@AfterMethod
 	public void cookiesdel()
 	{
+		// for eg: screenshot to be taken for each test method
 		System.out.println("Delete the cookies from the browser");
 	}
 	

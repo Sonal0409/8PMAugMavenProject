@@ -1,0 +1,34 @@
+  <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+
+  
+<suite name="8PMproject" verbose="1" >
+
+  <test name="Sanity Testing" >
+  
+   <parameter name="Uname" value="admin"/>
+   <parameter name="Pword" value="admin@123"/>
+
+    <classes>
+       <class name="com.TestNGScripts.ParametrizationwithXML" />
+    </classes>
+  </test>
+  
+  <test name="RegressionTesting" >
+  
+   <parameter name="Uname" value="emp1"/>
+   <parameter name="Pword" value="emp1@0409"/>
+
+    <classes>
+       <class name="com.TestNGScripts.ParametrizationwithXML" />
+       
+    </classes>
+  </test>
+ 
+ 
+</suite>
+  
+  
+  
+  
+ 

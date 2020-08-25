@@ -9,10 +9,26 @@
   <test name="Selenium scripts" >
 <!--   // names of the class that we want to execute  -->
     <classes>
-       <class name="com.TestNGScripts.WikiTestCase" />
        <class name="com.TestNGScripts.AnnotationsTestNG" />
-       <class name="com.TestNGScripts.BrowserMethods" />
-       <class name="com.TestNGScripts.WebElementDemo" />
+      <class name="com.TestNGScripts.BrowserMethods" />
+      <class name="com.TestNGScripts.WikiTestCase" />
+      <class name="com.TestNGScripts.WebElementDemo" />
+    </classes>
+  </test>
+ 
+ <test name="Selenium scripts" >
+<!--   // names of the class that we want to execute  -->
+    <classes>
+       <class name="com.TestNGScripts.AnnotationsTestNG" />
+      
+    </classes>
+  </test>
+ 
+ <test name="Selenium scripts" >
+<!--   // names of the class that we want to execute  -->
+    <classes>
+       <class name="com.TestNGScripts.AnnotationsTestNG" />
+      
     </classes>
   </test>
  
