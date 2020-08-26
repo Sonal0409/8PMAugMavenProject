@@ -1,65 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="8PMproject" duration-ms="32252" started-at="2020-08-25T00:48:49Z" finished-at="2020-08-25T00:49:21Z">
+  <suite name="Default suite" duration-ms="11464" started-at="2020-08-26T23:26:32Z" finished-at="2020-08-26T23:26:44Z">
     <groups>
     </groups>
-    <test name="Sanity Testing" duration-ms="16957" started-at="2020-08-25T00:48:49Z" finished-at="2020-08-25T00:49:06Z">
-      <class name="com.TestNGScripts.ParametrizationwithXML">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestNGScripts.ParametrizationwithXML@e0379d]" name="setup" is-config="true" duration-ms="9729" started-at="2020-08-25T00:48:49Z" finished-at="2020-08-25T00:48:58Z">
+    <test name="Default test" duration-ms="11464" started-at="2020-08-26T23:26:32Z" finished-at="2020-08-26T23:26:44Z">
+      <class name="com.TestNGScripts.ParameterizationwithPOI">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="startbrowser" is-config="true" duration-ms="8394" started-at="2020-08-26T23:26:32Z" finished-at="2020-08-26T23:26:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createAccount(java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParametrizationwithXML@e0379d]" name="createAccount" duration-ms="6133" started-at="2020-08-25T00:48:58Z" finished-at="2020-08-25T00:49:05Z">
+        </test-method> <!-- startbrowser -->
+        <test-method status="PASS" signature="wikipagedata(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="wikipagedata" duration-ms="796" started-at="2020-08-26T23:26:41Z" data-provider="testdataxlsx" finished-at="2020-08-26T23:26:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[us1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin@123]]>
+                <![CDATA[ps1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Username1@gmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.TestNGScripts.ParametrizationwithXML@e0379d]" name="closeBrowser" is-config="true" duration-ms="1026" started-at="2020-08-25T00:49:05Z" finished-at="2020-08-25T00:49:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.TestNGScripts.ParametrizationwithXML -->
-    </test> <!-- Sanity Testing -->
-    <test name="RegressionTesting" duration-ms="15145" started-at="2020-08-25T00:49:06Z" finished-at="2020-08-25T00:49:21Z">
-      <class name="com.TestNGScripts.ParametrizationwithXML">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestNGScripts.ParametrizationwithXML@1c1bced]" name="setup" is-config="true" duration-ms="8383" started-at="2020-08-25T00:49:06Z" finished-at="2020-08-25T00:49:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createAccount(java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParametrizationwithXML@1c1bced]" name="createAccount" duration-ms="5864" started-at="2020-08-25T00:49:14Z" finished-at="2020-08-25T00:49:20Z">
+        </test-method> <!-- wikipagedata -->
+        <test-method status="PASS" signature="wikipagedata(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="wikipagedata" duration-ms="691" started-at="2020-08-26T23:26:42Z" data-provider="testdataxlsx" finished-at="2020-08-26T23:26:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[emp1]]>
+                <![CDATA[Username2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[emp1@0409]]>
+                <![CDATA[pas@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[passward@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Username2@gmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.TestNGScripts.ParametrizationwithXML@1c1bced]" name="closeBrowser" is-config="true" duration-ms="893" started-at="2020-08-25T00:49:20Z" finished-at="2020-08-25T00:49:21Z">
+        </test-method> <!-- wikipagedata -->
+        <test-method status="PASS" signature="wikipagedata(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="wikipagedata" duration-ms="767" started-at="2020-08-26T23:26:43Z" data-provider="testdataxlsx" finished-at="2020-08-26T23:26:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pas@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password@456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Username3@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.TestNGScripts.ParametrizationwithXML -->
-    </test> <!-- RegressionTesting -->
-  </suite> <!-- 8PMproject -->
+        </test-method> <!-- wikipagedata -->
+      </class> <!-- com.TestNGScripts.ParameterizationwithPOI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
