@@ -1,95 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11464" started-at="2020-08-26T23:26:32Z" finished-at="2020-08-26T23:26:44Z">
+  <suite name="Default suite" duration-ms="18950" started-at="2020-08-27T23:36:49Z" finished-at="2020-08-27T23:37:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11464" started-at="2020-08-26T23:26:32Z" finished-at="2020-08-26T23:26:44Z">
-      <class name="com.TestNGScripts.ParameterizationwithPOI">
-        <test-method status="PASS" signature="startbrowser()[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="startbrowser" is-config="true" duration-ms="8394" started-at="2020-08-26T23:26:32Z" finished-at="2020-08-26T23:26:41Z">
+    <test name="Default test" duration-ms="18950" started-at="2020-08-27T23:36:49Z" finished-at="2020-08-27T23:37:08Z">
+      <class name="com.TestNGScripts.MouseOverDemo">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestNGScripts.MouseOverDemo@a3ffec]" name="setup" is-config="true" duration-ms="13950" started-at="2020-08-27T23:36:49Z" finished-at="2020-08-27T23:37:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startbrowser -->
-        <test-method status="PASS" signature="wikipagedata(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="wikipagedata" duration-ms="796" started-at="2020-08-26T23:26:41Z" data-provider="testdataxlsx" finished-at="2020-08-26T23:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[us1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ps1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Username1@gmail.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="mouseovermethod()[pri:0, instance:com.TestNGScripts.MouseOverDemo@a3ffec]" name="mouseovermethod" duration-ms="4962" started-at="2020-08-27T23:37:03Z" finished-at="2020-08-27T23:37:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wikipagedata -->
-        <test-method status="PASS" signature="wikipagedata(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="wikipagedata" duration-ms="691" started-at="2020-08-26T23:26:42Z" data-provider="testdataxlsx" finished-at="2020-08-26T23:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Username2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pas@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[passward@123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Username2@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wikipagedata -->
-        <test-method status="PASS" signature="wikipagedata(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestNGScripts.ParameterizationwithPOI@3bd550]" name="wikipagedata" duration-ms="767" started-at="2020-08-26T23:26:43Z" data-provider="testdataxlsx" finished-at="2020-08-26T23:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Username3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pas@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password@456]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Username3@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wikipagedata -->
-      </class> <!-- com.TestNGScripts.ParameterizationwithPOI -->
+        </test-method> <!-- mouseovermethod -->
+      </class> <!-- com.TestNGScripts.MouseOverDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

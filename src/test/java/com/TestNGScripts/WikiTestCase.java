@@ -4,7 +4,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -45,7 +48,15 @@ public class WikiTestCase {
 		
 		driver.manage().deleteAllCookies();  // delete cookies on the browser
 		
+	
+		
 		driver.get("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Selenium		+%28software%29");
+	
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		// implicit wait
+		
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		
 		
 		
 	}
@@ -78,7 +89,23 @@ public class WikiTestCase {
 		
 		// Inspect password textbox and enter data in the text box
 		driver.findElement(By.name("wpPassword")).sendKeys("password@123");
-		driver.findElement(By.xpath("//button[@value='Create your account']")).click();	
+		
+		WebElement e= driver.findElement(By.xpath("//button[@value='Create your account']"));
+		
+		// if we add 
+	
+		Thread.sleep(10000);// waiting until 10 seconds
+		
+		// instead of this use
+		
+		// explicit wait
+		
+				WebDriverWait w= new WebDriverWait(driver, 10); // wait time
+				// condition
+				  w.until(ExpectedConditions.visibilityOf(e));
+		
+		
+		e.click();	
 		
 	}
 	

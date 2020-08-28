@@ -31,6 +31,7 @@ public class ParameterizationwithExcel {
 		 	
 		 }
 		 
+		 
 		@Test(dataProvider="inputData")
 		public  void wikipagedata(String name, String password, String retype, String email)
 		{
@@ -47,11 +48,6 @@ public class ParameterizationwithExcel {
 			driver.findElement(By.id("wpEmail")).sendKeys(email);
 		}
 		
-		public int add(int a, int b)
-		{
-			int c= a+b;
-			return c;
-		}
 		
 		// Data Provider method-- return data from excel and pass it on to test method
 		

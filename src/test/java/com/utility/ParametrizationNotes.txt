@@ -1,0 +1,89 @@
+TestNG
+
+Create an XML file and execute all your TestNG scripts at a time
+
+Create xml with an extension.xml file
+
+
+
+Suite--name="", set of tests
+      Tests-->Sanity Tests---set of test cases
+      test cases-->set of test steps
+	Tests-->Regression testing
+         all test scripts involving regression
+	Tests--> function test cycle1
+all test scripts involving
+
+
+<classes>
+
+<class name=packagename.classname
+
+
+
+Giving different set of inputs each time the script is run
+we can pass to our script as parameters
+this data can be first writtn in your xml file or in an excel file
+
+How to parametrize your script with xml file
+create an xml file
+create suit
+create test
+parameter - test info
+classnames
+provide the test data, tag - parameter
+Script provide @parameter annotation
+and this test data will be passed on to your script
+with help of a TestNG annotation: @Parameter
+
+
+DataProvider Method
+Uses the testNGannotation @DataProvider(name="")
+A new method is created and this method is responsible to read the data from excel sheet and provide the data to Test method  -- Data Provider method
+Excel --.xls --jxl jar file
+we need to first go to excel location
+fetch the worksheet from the location
+Go to the sheet which has Testdata
+fetch the number of rows which has data
+fetch the number of columns which has data
+Now fetch the values of each cell by going to each column of each row in the sheet
+
+When Tets data is stored in .xlsx format file--h
+Use @DataProvider annotation and method
+how can we fetch the data  -- Apache POI Jar files
+we need to first go to excel location
+fetch the worksheet from the location
+Go to the sheet which has Testdata
+fetch the number of rows which has data
+fetch the number of columns which has data
+Now fetch the values of each cell by going to each column of each row in the sheet
+
+Dependency to be added in POM.xml file
+poi and poi-ooxml
+versions of both depdency has to be same
+
+this DataProvider method is going to return an Object[][] type of data
+
+An object is a large chunk of memory that can potentially contain a great deal of data along with methods (little programs) to process that data.
+
+
+Wait times in selenium
+
+MouseOver on an element on a webpage
+
+Drag and drop action on a webpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
