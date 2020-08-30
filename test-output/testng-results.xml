@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18950" started-at="2020-08-27T23:36:49Z" finished-at="2020-08-27T23:37:08Z">
+  <suite name="Default suite" duration-ms="21051" started-at="2020-08-29T00:55:12Z" finished-at="2020-08-29T00:55:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18950" started-at="2020-08-27T23:36:49Z" finished-at="2020-08-27T23:37:08Z">
-      <class name="com.TestNGScripts.MouseOverDemo">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestNGScripts.MouseOverDemo@a3ffec]" name="setup" is-config="true" duration-ms="13950" started-at="2020-08-27T23:36:49Z" finished-at="2020-08-27T23:37:03Z">
+    <test name="Default test" duration-ms="21051" started-at="2020-08-29T00:55:12Z" finished-at="2020-08-29T00:55:33Z">
+      <class name="com.TestNGScripts.KeyEvents">
+        <test-method status="PASS" signature="Keyevenetsmethod()[pri:0, instance:com.TestNGScripts.KeyEvents@1832929]" name="Keyevenetsmethod" duration-ms="20954" started-at="2020-08-29T00:55:12Z" finished-at="2020-08-29T00:55:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="mouseovermethod()[pri:0, instance:com.TestNGScripts.MouseOverDemo@a3ffec]" name="mouseovermethod" duration-ms="4962" started-at="2020-08-27T23:37:03Z" finished-at="2020-08-27T23:37:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mouseovermethod -->
-      </class> <!-- com.TestNGScripts.MouseOverDemo -->
+        </test-method> <!-- Keyevenetsmethod -->
+      </class> <!-- com.TestNGScripts.KeyEvents -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

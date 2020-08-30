@@ -30,46 +30,63 @@ public class MouseOverDemo {
 			
 		}
 		
-		@Test
+		
 		public void mouseovermethod() throws InterruptedException
 		{
-			Actions obj= new Actions(driver);
+			
 			
 			WebElement e=driver.findElement(By.id("nav-link-accountList"));
 			
 			// mouseover-- to move to an element moveToElement(), build , perform
 			
-
+			Actions obj= new Actions(driver);
+			
+			obj.moveToElement(e).build().perform();
 			
 			Thread.sleep(2000);
+			
+			// inspect one of the links and click on it
 			
 			driver.findElement(By.xpath("//*[@id=\"nav-al-wishlist\"]/a[4]/span")).click();
 		}
 		
 		
-	
+	@Test
 	public void dragandDropmethod() throws InterruptedException
 	{
 		driver.navigate().to("https://jqueryui.com/droppable/");
 
 		driver.switchTo().frame(0);
-
-		Actions action = new Actions(driver);
-
+		
+		
 		WebElement e= driver.findElement(By.id("draggable"));
 
 		WebElement e1= driver.findElement(By.id("droppable"));
-// drag and drop
-
 		
-// click an hold for sometime on the element to be moved to another location, release, build and perform
+		
+		Actions obj = new Actions(driver);
+		// drag and drop
 
-
-//double click
-
+		// click an hold for sometime on the element to be moved to another location, release, build and perform
+// clickAndHold() --event:  it will click on an element and hold it for certain time
+		// MoveToElement() --Event : move the cursor to an or another element
+		// build() and perform() methods are used to perform the series of events on the page
+		obj.clickAndHold(e).moveToElement(e1).build().perform();
+		
+		Thread.sleep(3000);
+		driver.navigate().refresh();
+		
+		//double click
+        
+		
+		//obj.doubleClick(e).build().perform();
+		
 		
 //right click on an element
+		driver.switchTo().defaultContent();
+		WebElement e2= driver.findElement(By.linkText("Droppable"));
 		
+		obj.contextClick(e2).build().perform();
 		
 
 
