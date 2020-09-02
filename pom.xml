@@ -4,6 +4,31 @@
   <artifactId>8PMJulyMavenProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+     <build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>2.5.1</version>
+<configuration>
+<encoding>UTF-8</encoding>
+<source>1.6</source>
+<target>1.6</target>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>2.21.0</version>
+ <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/main/resources/RegressionRunner.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>  
+
+</plugin>
+</plugins>
+</build>
   <dependencies>
   
   <dependency>

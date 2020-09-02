@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<!--   in an xml we will have only 1 suite tag -->
+  
+<suite name="8PMproject" verbose="1" >
+  
+ <!--  // in am xml file we can have multiple tags -->
+  
+  <test name="Selenium scripts" >
+<!--   // names of the class that we want to execute  -->
+    <classes>
+       <class name="com.TestNGScripts.AnnotationsTestNG" />
+      <class name="com.TestNGScripts.BrowserMethods" />
+      <class name="com.TestNGScripts.WikiTestCase" />
+      <class name="com.TestNGScripts.WebElementDemo" />
+    </classes>
+  </test>
+ 
+ <test name="Selenium scripts" >
+<!--   // names of the class that we want to execute  -->
+    <classes>
+       <class name="com.TestNGScripts.AnnotationsTestNG" />
+      
+    </classes>
+  </test>
+ 
+ <test name="Selenium scripts" >
+<!--   // names of the class that we want to execute  -->
+    <classes>
+       <class name="com.TestNGScripts.AnnotationsTestNG" />
+      
+    </classes>
+  </test>
+ 
+ 
+</suite>

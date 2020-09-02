@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21051" started-at="2020-08-29T00:55:12Z" finished-at="2020-08-29T00:55:33Z">
+  <suite name="Default suite" duration-ms="22418" started-at="2020-09-01T00:25:33Z" finished-at="2020-09-01T00:25:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21051" started-at="2020-08-29T00:55:12Z" finished-at="2020-08-29T00:55:33Z">
+    <test name="Default test" duration-ms="22418" started-at="2020-09-01T00:25:33Z" finished-at="2020-09-01T00:25:55Z">
       <class name="com.TestNGScripts.KeyEvents">
-        <test-method status="PASS" signature="Keyevenetsmethod()[pri:0, instance:com.TestNGScripts.KeyEvents@1832929]" name="Keyevenetsmethod" duration-ms="20954" started-at="2020-08-29T00:55:12Z" finished-at="2020-08-29T00:55:33Z">
+        <test-method status="PASS" signature="Keyevenetsmethod()[pri:0, instance:com.TestNGScripts.KeyEvents@1832929]" name="Keyevenetsmethod" duration-ms="22329" started-at="2020-09-01T00:25:33Z" finished-at="2020-09-01T00:25:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Keyevenetsmethod -->

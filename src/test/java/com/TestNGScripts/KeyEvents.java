@@ -29,7 +29,7 @@ driver.get("https://selenium.dev/selenium/docs/api/java/index.html");
 		//sendKeys()
 		// keyPress  and keyRelease from keyboard
 		
-		
+		// to open new tabs in window  -- 2 tabs
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_T);
 		
@@ -40,8 +40,12 @@ driver.get("https://selenium.dev/selenium/docs/api/java/index.html");
 		robot.keyRelease(KeyEvent.VK_CONTROL); 
 		robot.keyRelease(KeyEvent.VK_T);
 		
+		//robot.keyPress(KeyEvent.VK_META);
+		
 		Thread.sleep(2000);
-		//Switch focus to new tab
+		
+		// Capture all the tabs that are open on a browser window --getWindowHandles() method is used
+	
 		
 		// Use method getWindowHandles()
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
@@ -53,7 +57,7 @@ driver.get("https://selenium.dev/selenium/docs/api/java/index.html");
 		driver.get("https://selenium.dev/selenium/docs/api/java/index.html");
 		
 		
-		driver.switchTo().window(tabs.get(0));
+		driver.switchTo().window(tabs.get(2));
 		
 		driver.get("https://jqueryui.com/droppable/");
 		
